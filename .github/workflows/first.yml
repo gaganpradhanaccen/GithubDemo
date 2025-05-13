@@ -8,8 +8,11 @@ on:
 jobs:
   hello-world:
     runs-on: ubuntu-latest
+    
 
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
     - name: Show Hello World message
       run: echo "Hello, World!"
     - name: show list of dirrectory
