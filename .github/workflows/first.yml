@@ -23,13 +23,13 @@ jobs:
         run: javac src/main/java/com/example/WelcomeApp.java
 
       - name: Run Java application
-        run: java WelcomeApp &
+        run: java src/main/java/com/example/WelcomeApp &
 
       - name: Wait for server to start
         run: sleep 5
 
       - name: Test with curl
-        run: curl http://localhost:8888
+        run: curl http://localhost:8080
 
       - name: Sleep before exit
         run: sleep 20
