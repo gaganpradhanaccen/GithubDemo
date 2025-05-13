@@ -9,14 +9,13 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     
-
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Show Hello World message
       run: echo "Hello, World!"
     - name: show list of dirrectory
       run: ls
     - name: Read the file
-      run: cat readme.md
+      run: cat README.md
 
