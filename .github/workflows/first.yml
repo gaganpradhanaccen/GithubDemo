@@ -20,8 +20,8 @@ jobs:
           java-version: '17'
 
       - name: Compile Java application
-        run: javac Welcomeapp.java
-
+        run: javac src/main/java/com/example/Welcomeapp.java
+        
       - name: Run Java application
         run: java Welcomeapp &
 
