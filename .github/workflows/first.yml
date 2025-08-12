@@ -1,4 +1,4 @@
-name: Run Java App
+name: Run Java App Demo
 
 on:
   push:
